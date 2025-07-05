@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="ratio ratio-16x9 mb-3">
+        <img src="{{ url_for('static', filename='images/veg_pickle1.jpg') }}" class="img-fluid rounded" alt="Mango Pickle" style="object-fit:cover;width:100%;height:100%;">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>Mango Pickle</h2>
+      <p class="lead">Spicy and tangy homemade mango pickle, made with fresh raw mangoes and traditional spices.</p>
+      <ul>
+        <li>100% homemade and preservative-free</li>
+        <li>Perfect with rice, roti, or snacks</li>
+        <li>Rich, authentic South Indian flavor</li>
+      </ul>
+      <form method="POST" action="/add-to-cart" class="add-to-cart-form">
+        <input type="hidden" name="name" value="Mango Pickle">
+        <input type="hidden" name="price" value="120">
+        <input type="hidden" name="image" value="{{ url_for('static', filename='images/veg_pickle1.jpg') }}">
+        <button type="submit" class="btn btn-success btn-lg">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

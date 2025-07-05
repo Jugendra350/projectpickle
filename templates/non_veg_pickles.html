@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Non-Veg Pickles</h2>
+<div class="row">
+  <!-- Product 1 -->
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <img src="{{ url_for('static', filename='images/chicken-pickle.jpg') }}" class="card-img-top product-img-anim" alt="Chicken Pickle">
+      <div class="card-body">
+        <h5 class="card-title">Chicken Pickle</h5>
+        <p class="card-text">Authentic spicy chicken pickle, homemade style.</p>
+        <button class="btn btn-danger add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- Product 2 -->
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <img src="{{ url_for('static', filename='images/Fish-Pickle.jpg') }}" class="card-img-top product-img-anim" alt="Fish Pickle">
+      <div class="card-body">
+        <h5 class="card-title">Fish Pickle</h5>
+        <p class="card-text">Tangy and spicy fish pickle, a coastal favorite.</p>
+        <button class="btn btn-danger add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- Product 3 -->
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <img src="{{ url_for('static', filename='images/Prawn-Pickle.jpg') }}" class="card-img-top product-img-anim" alt="Prawn Pickle">
+      <div class="card-body">
+        <h5 class="card-title">Prawn Pickle</h5>
+        <p class="card-text">Juicy prawns pickled with traditional spices.</p>
+        <button class="btn btn-danger add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- Product 4 -->
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <img src="{{ url_for('static', filename='images/Mutton-Pickle.jpg') }}" class="card-img-top product-img-anim" alt="Mutton Pickle">
+      <div class="card-body">
+        <h5 class="card-title">Mutton Pickle</h5>
+        <p class="card-text">Rich and flavorful mutton pickle for meat lovers.</p>
+        <button class="btn btn-danger add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

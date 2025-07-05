@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Snacks</h2>
+<div class="row">
+  <!-- Example product card -->
+  <div class="col-md-4">
+    <div class="card mb-4">
+      <img src="{{ url_for('static', filename='images/snack1.jpg') }}" class="card-img-top" alt="Snack 1">
+      <div class="card-body">
+        <h5 class="card-title">Murukku</h5>
+        <p class="card-text">Crispy and delicious homemade murukku.</p>
+        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <!-- Add more product cards as needed -->
+</div>
+{% endblock %}
