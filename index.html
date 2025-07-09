@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron text-center bg-light p-5 rounded">
+    <h1 class="display-4">Welcome to Home Made Pickles & Snacks!</h1>
+    <p class="lead">Delicious, authentic, and homemade. Explore our range of pickles and snacks made with love.</p>
+    
+    <a href="/veg-pickles" class="btn btn-success btn-lg m-2">Veg Pickles</a>
+    <a href="/non-veg-pickles" class="btn btn-danger btn-lg m-2">Non-Veg Pickles</a>
+</div>
+<div class="row mt-5">
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="ratio ratio-16x9 mb-2">
+                <img src="{{ url_for('static', filename='images/mango-pickle1.jpg') }}" class="card-img-top object-fit-cover" alt="Veg Pickles" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Veg Pickles</h5>
+                <p class="card-text">Traditional vegetarian pickles with authentic flavors.</p>
+                <a href="/veg-pickles" class="btn btn-success">Browse Veg Pickles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="ratio ratio-16x9 mb-2">
+                <img src="{{ url_for('static', filename='images/prawn-pickle.jpg') }}" class="card-img-top object-fit-cover" alt="Prawn Pickle" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Non-Veg Pickles</h5>
+                <p class="card-text">Juicy prawns pickled with traditional spices.</p>
+                <a href="/non-veg-pickles" class="btn btn-danger">Browse Non-Veg Pickles</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
